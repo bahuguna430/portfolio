@@ -64,6 +64,13 @@
     </div>
   </div>
 </section>
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page reload
+    alert("Your message has been sent successfully!");
+    this.reset(); // clear the form after sending
+  });
+</script>
 
 </body>
 </html>
